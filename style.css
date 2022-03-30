@@ -1,0 +1,498 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+
+.parent-container{
+    height:100vh;
+    width: 100vw;
+    background-color: black;
+
+}
+
+.video{
+    height: 100%;
+    width: 100%;
+    border: 1px solid;
+}
+
+.buttons{
+    position: fixed;
+    height: 19rem;
+    width: 7rem;
+    top: 20rem;
+    left: 108rem;
+    z-index: 2;
+    /* border: 1px solid wheat; */
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.outer-cover{
+    height: 7rem;
+    border: 8px solid white;
+    border-radius: 50%;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+}
+.recording{
+    border: 1px solid;
+    border-radius: 50%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 3rem; */
+    background-color: red;
+    font-size: large;
+    font-weight: bold;
+    width: 4rem;
+}
+.click{
+    border: 1px solid;
+    border-radius: 50%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: large;
+    font-weight: bold;
+    width:4rem;
+}
+.filter-cover{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top:0;
+}
+.filter-btn{
+    position: fixed;
+    height: 17rem;
+    width: 8rem;
+    /* border: 1px solid white; */
+    /* background-color: aqua; */
+    top: calc( (100vh - 17rem)/2);
+    left: 3rem;
+    z-index: 2;
+}
+.filter{
+    height: 20%;
+    width: 100%;
+    background-blend-mode: color-burn;
+    background-image: url(https://picsum.photos/200/300);
+    background-size: 100%;
+}
+.timer{
+    position: fixed;
+    bottom: 8rem;
+    z-index: 2;
+    color: white;
+    /* background-color: antiquewhite; */
+    font-size: 2rem;
+    font-weight: bolder;
+    left: 4rem;
+    display: none;
+
+}
+.record-animation{
+    animation: animation 1s;
+    animation-iteration-count: infinite;
+}
+.click-animation{
+    animation: animation 1s;
+    animation-iteration-count: 1;
+}
+@keyframes animation {
+
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+    
+}
+.zoom{
+    position: fixed;
+    top: 4rem;
+   
+    height: 10rem;
+    width: 6rem;
+    left: 108rem;
+
+
+
+}
+.zoom-in{
+    width: 100%;
+    height: 50%;
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zoom-in:hover{
+   cursor: pointer;
+   background-color: #444;
+}
+.zoom-out{
+    width: 100%;
+    height: 50%;
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zoom-out:hover{
+    background-color: #444;
+}
+
+.gallery{
+    position: fixed;
+    /* border: 1px solid white; */
+    height: 8rem;
+    width: 8rem;
+    bottom: 4rem;
+    left: 108rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: white;
+
+}
+.gallery:hover{
+    cursor: pointer;
+    background-color: #444;
+}
+
+@media screen and (max-width:1440px) {
+    .buttons {
+        position: fixed;
+        height: 12rem;
+        width: 9rem;
+        top: 24rem;
+        left: 83rem;
+        z-index: 2;
+        /* border: 1px solid wheat; */
+        flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+    }
+    .outer-cover{
+        height: 6rem;
+    border: 8px solid white;
+    border-radius: 50%;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    }
+    .recording {
+        border: 1px solid;
+        border-radius: 50%;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-bottom: 3rem; */
+        background-color: red;
+        font-size: large;
+        font-weight: bold;
+        width: 3rem;
+    }
+    .click {
+        border: 1px solid;
+        border-radius: 50%;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        font-size: large;
+        font-weight: bold;
+        width: 3rem;
+    }
+    .zoom {
+        position: fixed;
+        top: 11rem;
+        height: 10rem;
+        width: 6rem;
+        left: 83rem;
+    }
+   
+    .filter-btn {
+        position: fixed;
+        height: 17rem;
+        width: 8rem;
+        /* border: 1px solid white; */
+        /* background-color: aqua; */
+        top: calc( (100vh - 17rem)/2);
+        left: 3rem;
+        z-index: 2;
+    }
+    .timer {
+        position: fixed;
+        bottom: 2rem;
+        z-index: 2;
+        color: white;
+        /* background-color: antiquewhite; */
+        font-size: 1.5rem;
+        font-weight: bolder;
+        left: 1rem;
+        display: none;
+    }
+    .gallery {
+        position: fixed;
+        /* border: 1px solid white; */
+        height: 8rem;
+        width: 8rem;
+        bottom: 4rem;
+        left: 82rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4rem;
+        color: white;
+    }
+  }
+
+  @media screen and (max-width:770px) {
+    .buttons {
+        position: fixed;
+        height: 12rem;
+        width: 14rem;
+        top: 47rem;
+        left: 20rem;
+        z-index: 2;
+        /* border: 1px solid wheat; */
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+    }
+    .outer-cover {
+        height: 6rem;
+        border: 8px solid white;
+        border-radius: 50%;
+        width: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+    .recording {
+        border: 1px solid;
+        border-radius: 50%;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-bottom: 3rem; */
+        background-color: red;
+        font-size: large;
+        font-weight: bold;
+        width: 3rem;
+    }
+    .click {
+        border: 1px solid;
+        border-radius: 50%;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        font-size: large;
+        font-weight: bold;
+        width: 3rem;
+    }
+    .zoom {
+        position: fixed;
+        top: 4rem;
+        height: 10rem;
+        width: 6rem;
+        left: 4rem;
+        display: flex;
+    }
+    .zoom-in {
+        width: 100%;
+        height: 50%;
+        color: white;
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .zoom-out {
+        width: 100%;
+        height: 50%;
+        color: white;
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .filter-btn {
+        position: fixed;
+        height: 17rem;
+        width: 8rem;
+        /* border: 1px solid white; */
+        /* background-color: aqua; */
+        top: calc( (100vh - 17rem)/2);
+        left: 1rem;
+        z-index: 2;
+    }
+    .timer {
+        position: fixed;
+        bottom: 2rem;
+        z-index: 2;
+        color: white;
+        /* background-color: antiquewhite; */
+        font-size: 1.5rem;
+        font-weight: bolder;
+        left: 1rem;
+        display: none;
+    }
+    .gallery {
+        position: fixed;
+        /* border: 1px solid white; */
+        height: 8rem;
+        width: 8rem;
+        bottom: 44rem;
+        left: 38rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4rem;
+        color: white;
+    }
+  }
+
+@media screen and (max-width:425px) {
+    .buttons {
+        position: fixed;
+        height: 8rem;
+        width: 10rem;
+        top: 40rem;
+        left: 5rem;
+        z-index: 2;
+        /* border: 1px solid wheat; */
+        /* flex-direction: column; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .outer-cover {
+        height: 4rem;
+        border: 8px solid white;
+        border-radius: 50%;
+        width: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+    .recording {
+        border: 1px solid;
+        border-radius: 50%;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-bottom: 3rem; */
+        background-color: red;
+        font-size: large;
+        font-weight: bold;
+        width: 2rem;
+    }
+    .click {
+        border: 1px solid;
+        border-radius: 50%;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        font-size: large;
+        font-weight: bold;
+        width: 2rem;
+    }
+    .zoom {
+        position: fixed;
+        top: 14.5rem;
+        height: 4rem;
+        width: 4rem;
+        left: 14rem;
+        display: flex;
+    }
+    .zoom-in {
+        width: 100%;
+        height: 50%;
+        color: white;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .zoom-out {
+        width: 100%;
+        height: 50%;
+        color: white;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .filter-btn {
+        position: fixed;
+        height: 15rem;
+        width: 10rem;
+        /* border: 1px solid white; */
+        /* background-color: aqua; */
+        top: 14rem;
+        left: 1rem;
+        z-index: 2;
+        display: flex;
+    }
+    .timer {
+        position: fixed;
+        bottom: 2rem;
+        z-index: 2;
+        color: white;
+        /* background-color: antiquewhite; */
+        font-size: 1.5rem;
+        font-weight: bolder;
+        left: 1rem;
+        display: none;
+    }
+    .gallery {
+        position: fixed;
+        /* border: 1px solid white; */
+        height: 8rem;
+        width: 8rem;
+        bottom: 4rem;
+        left: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: white;
+    }
+  }
+
+  

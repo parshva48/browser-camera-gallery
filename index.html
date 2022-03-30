@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<body>
+        <div class="parent-container">
+            <video controls autoplay class="video">
+                
+            </video>
+          <div class="filter-cover"></div>
+           <div class="buttons">
+               <div class="outer-cover">
+                <div class="recording"></div>
+               </div>
+            <div class="outer-cover">
+                <div class="click"></div>
+            </div>
+            
+           </div>
+
+           <div class="zoom">
+               <div class="zoom-in">
+                <i class="fa-solid fa-plus"></i>
+               </div>
+               <div class="zoom-out">
+                <i class="fa-solid fa-minus"></i>
+               </div>
+           </div>
+
+           <div class="filter-btn">
+            <div class="filter" style="background-color:#f4a2613d;"></div>
+            <div class="filter" style="background-color:#e85d0440"></div>
+            <div class="filter" style="background-color: #ad5d6d7a;"></div>
+            <div class="filter" style="background-color: #2195f323;"></div>
+            <div class="filter"></div>
+           </div>
+           
+           <div class="timer">00:00:00</div>
+           <div class="gallery">
+            <i class="fa-solid fa-image"></i>
+           </div>
+          
+        </div>
+       
+       
+    
+ 
+      <script src="db.js"></script>  
+    <script src="script.js"></script>
+    <script>
+        let gallerybtn=document.querySelector(".gallery");
+        gallerybtn.addEventListener("click",function(){
+            location.assign("gallery.html");
+        })
+    </script>
+</body>
+
+
+</html>

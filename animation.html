@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+    .parent{
+        height:10rem;
+        width:10rem;
+        border: 1px solid;
+        background-color: lightcyan;
+        margin-top: 2rem;
+        animation: myanimation1 4s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+     }
+  
+     .parent2{
+        height:10rem;
+        width:10rem;
+        border: 1px solid;
+        background-color: lightgrey;
+        animation: myanimation2 4s;
+        animation-iteration-count: infinite;
+         animation-delay: 2s;
+     }
+     @keyframes myanimation1{
+
+        0%{
+          background-color: limegreen;
+          transform: scale(1) translateX(0px);
+          border-radius: 0%;
+
+        }
+        25%{
+             background-color: light pink;
+             transform: scale(1.25) translateX(100px);
+             border-radius: 10%;
+        }
+        50%{
+          background-color: lightgrey;
+          transform: scale(1.5) translateX(200px);
+          border-radius: 25%;
+        }
+        75%{
+          background-color: lightseagreen;
+          transform: scale(1.75) translateX(300px);
+          border-radius: 35%;
+        }
+        100%{
+         background-color:red;
+         transform: scale(2) translateX(400px);
+         border-radius: 50%;
+        }
+     }
+     @keyframes myanimation2{
+
+0%{
+  background-color: limegreen;
+  transform: scale(1) translateY(0px);
+  border-radius: 0%;
+
+}
+25%{
+     background-color: light pink;
+     transform: scale(1.25) translateY(100px);
+     border-radius: 10%;
+}
+50%{
+  background-color: lightgrey;
+  transform: scale(1.5) translateY(200px);
+  border-radius: 25%;
+}
+75%{
+  background-color: lightseagreen;
+  transform: scale(1.75) translateY(300px);
+  border-radius: 35%;
+}
+100%{
+ background-color:red;
+ transform: scale(2) translateY(400px);
+ border-radius: 50%;
+}
+}
+</style>
+<body>
+    <div class="parent2">
+
+    </div>
+    <div class="parent">
+    </div>
+   
+</body>
+</html>
